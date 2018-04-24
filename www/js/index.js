@@ -19,6 +19,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
+        document.getElementById("submit").addEventListener("click",showit());
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -45,5 +46,13 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+    }
+    
+    function showit()
+    {
+        var name=document.getElementById("name").value;
+        var age=document.getElementById("age").value;
+        
+        
     }
 };
