@@ -52,6 +52,7 @@ var app = {
     {
         var name=document.getElementById("name").value;
         var age=document.getElementById("age").value;
+        document.getElementById("content").text="Hello "+name+",your age is "+age+".";
         
         
     }
